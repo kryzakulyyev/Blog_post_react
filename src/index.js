@@ -4,17 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const classProperties = 'blue';
+
 const myBlogPost = {
   title: 'My first blog',
   body: 'lorem ipsum',
- 
+  published:true
 }
+let classProperties;
+
+if(myBlogPost.published){
+  classProperties = 'green'
+}else{
+  classProperties = 'red'
+}
+
+const fontClass = 'font-times'
 
 const blogPost = (
   <div>
-    <h1 id='title' className={classProperties}>{myBlogPost.title}</h1> 
-    <p></p> 
+    <h1 id='title' className={`${classProperties}${fontClass}`/*classProperties + ' '+ fontClass */}>{myBlogPost.title}</h1> 
+<p>{myBlogPost.body}</p> 
     <p></p>
     <img src="" alt=""/>
   </div>
@@ -22,15 +31,9 @@ const blogPost = (
 
 // const blogPost = {
 //   title: 'My first blog post',
-//   published:true
+//  
 // }
-// let isPublishedClassName;
 
-// if(blogPost.published){
-//   isPublishedClassName = 'green'
-// }else{
-//   isPublishedClassName = 'red'
-// }
 
 // const element= <h1 className={isPublishedClassName}>{blogPost.title}</h1>
 
