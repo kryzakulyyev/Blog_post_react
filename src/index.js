@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import {BlogPost} from './BlogPost'
 import reportWebVitals from './reportWebVitals';
+import Greeting from './Greeting'
 
 
 
