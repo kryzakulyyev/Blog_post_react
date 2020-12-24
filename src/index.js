@@ -2,32 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import {BlogPost} from './BlogPost'
 import reportWebVitals from './reportWebVitals';
 
 
-const myBlogPost = {
-  title: 'My first blog',
-  body: 'lorem ipsum',
-  published:true
-}
-let classProperties;
 
-if(myBlogPost.published){
-  classProperties = 'green'
-}else{
-  classProperties = 'red'
-}
 
-const fontClass = 'font-times'
-
-const blogPost = (
-  <div>
-    <h1 id='title' className={`${classProperties}${fontClass}`/*classProperties + ' '+ fontClass */}>{myBlogPost.title}</h1> 
-<p>{myBlogPost.body}</p> 
-    <p></p>
-    <img src="" alt=""/>
-  </div>
-);
 
 // const blogPost = {
 //   title: 'My first blog post',
@@ -38,7 +18,7 @@ const blogPost = (
 // const element= <h1 className={isPublishedClassName}>{blogPost.title}</h1>
 
 ReactDOM.render(
-  blogPost /* element */,
+  <BlogPost/> /* element */,
   document.getElementById('root')
 );
 
