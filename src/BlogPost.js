@@ -1,3 +1,5 @@
+import React from 'react'
+
 const myBlogPost = {
   title: 'My first blog',
   body: 'lorem ipsum',
@@ -31,7 +33,17 @@ const blogPost = (
     <img src="" alt=""/>
   </div>
 );
- export function BlogPost (){
+//Stateless functional components
+ export class BlogPost extends React.Component (){
+   render(){
   return blogPost;
+   }
 }
 
+//Default export     
+/* export default BlogPost */
+/* import BlogPost from './BlogPost.js'  */
+
+//Multiple export    Should be same name
+/* export {BlogPost} */
+/* import {BlogPost} from  './BlogPost.js' */
