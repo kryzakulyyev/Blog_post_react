@@ -18,7 +18,9 @@ import reportWebVitals from './reportWebVitals';
 // const element= <h1 className={isPublishedClassName}>{blogPost.title}</h1>
 
 ReactDOM.render(
-  <BlogPost/> /* element */,
+  <React.StrictMode>
+  <App/>
+</React.StrictMode>/* element */,
   document.getElementById('root')
 );
 
