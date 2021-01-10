@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.green {
+/* .green {
   color: green;
 }
 .red {
@@ -19,3 +19,6 @@ code {
 }
 /* .font-times {
 } */
+.text-center {
+  text-align: center;
+}

@@ -7,9 +7,6 @@ import reportWebVitals from './reportWebVitals';
 import Greeting from './Greeting'
 
 
-
-
-
 // const blogPost = {
 //   title: 'My first blog post',
 //  
