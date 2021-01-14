@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {BlogPost} from './BlogPost'
+// import {BlogPost} from './BlogPost'
 import reportWebVitals from './reportWebVitals';
-import Greeting from './Greeting'
+// import Greeting from './Greeting'
 
 
 // const blogPost = {
