@@ -1,14 +1,14 @@
-
+import {Link} from 'react-router-dom'
 
 function Posts(props){
 
   return (
      <section>
-     {props.blogPosts.map((post)=>{
+     {props.blogPosts.map((globe, index)=>{
       return (
-       <article>
-        <h2>{post.title}</h2>
-        <p>{post.body}</p>
+       <article key={index}>
+       <Link to={'/posts/'+ globe.id}> <h2>{globe.title}</h2> </Link>
+        {/* <p>{post.body}</p> */}
        </article>)
     })}
    
